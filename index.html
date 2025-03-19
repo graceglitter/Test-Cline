@@ -8,26 +8,69 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 </head>
 <body>
-    <header>
-        <h1>Help Us Fight Hunger</h1>
-        <p>Every donation makes a difference.</p>
-    </header>
+<header class="hero">
+    <div class="hero-content">
+        <h1>Join the Fight Against Hunger</h1>
+        <p>Every $1 donated provides 5 meals. Let's make a difference together!</p>
+        <button class="donate-btn">Donate Now</button>
+    </div>
+    <div class="hero-bg"></div>
+</header>
 
-    <section id="about">
-        <h2>About the Campaign</h2>
-        <p>Our mission is to provide nutritious meals to those in need. We believe that everyone deserves access to healthy food.</p>
-    </section>
+<section class="section" id="about">
+    <div class="container">
+        <h2>Why We Exist</h2>
+        <p>Over 800 million people worldwide go to bed hungry every night. Your support ensures no one faces hunger alone.</p>
+        <div class="stats">
+            <div class="stat-item">
+                <h3>1.2M+</h3>
+                <p>Meals Served</p>
+            </div>
+            <div class="stat-item">
+                <h3>500+</h3>
+                <p>Communities Helped</p>
+            </div>
+        </div>
+    </div>
+</section>
 
-    <section id="donate">
-        <h2>Donate Now</h2>
-        <p>Your contribution can help us feed families and individuals struggling with food insecurity.</p>
-        <button id="donate-button">Donate</button>
-    </section>
+<section class="section donate-section" id="donate">
+    <div class="container">
+        <h2>Make a Donation</h2>
+        <div class="donation-progress">
+            <div class="progress-bar" style="--value:75"></div>
+            <p>$75,000 Raised of $100,000 Goal</p>
+        </div>
+        <form id="donation-form">
+            <div class="form-group">
+                <label for="amount">Donation Amount</label>
+                <input type="number" id="amount" name="amount" min="5" required>
+                <span class="currency">$</span>
+            </div>
+            <div class="form-group">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            <button type="submit" class="submit-btn">Submit Donation</button>
+        </form>
+    </div>
+</section>
 
-    <section id="impact">
-        <h2>Our Impact</h2>
-        <p>Together, we've served over 1 million meals and supported countless communities.</p>
-    </section>
+<section class="section testimonial" id="impact">
+    <div class="container">
+        <h2>What Your Support Achieves</h2>
+        <div class="testimonial-slider">
+            <div class="testimonial-item">
+                <p>"Thanks to this campaign, my family can eat properly again."</p>
+                <cite>- Maria, Recipient</cite>
+            </div>
+            <div class="testimonial-item">
+                <p>"The easiest way to make a real impact in the community."</p>
+                <cite>- John, Donor</cite>
+            </div>
+        </div>
+    </div>
+</section>
 
     <footer>
         <p>&copy; 2025 Charity Food Campaign</p>
